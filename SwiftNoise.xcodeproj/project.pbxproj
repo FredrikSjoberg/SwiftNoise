@@ -10,6 +10,15 @@
 		76C964781B583A4B001D9E78 /* SwiftNoise.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C964771B583A4B001D9E78 /* SwiftNoise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76C9647E1B583A4B001D9E78 /* SwiftNoise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C964721B583A4B001D9E78 /* SwiftNoise.framework */; };
 		76C964851B583A4B001D9E78 /* SwiftNoiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964841B583A4B001D9E78 /* SwiftNoiseTests.swift */; };
+		76C964961B583A8E001D9E78 /* Perlin1D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9648E1B583A8E001D9E78 /* Perlin1D.swift */; };
+		76C964971B583A8E001D9E78 /* Perlin2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9648F1B583A8E001D9E78 /* Perlin2D.swift */; };
+		76C964981B583A8E001D9E78 /* Perlin3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964901B583A8E001D9E78 /* Perlin3D.swift */; };
+		76C964991B583A8E001D9E78 /* CGPoint+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964921B583A8E001D9E78 /* CGPoint+Internal.swift */; };
+		76C9649A1B583A8E001D9E78 /* Float+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964931B583A8E001D9E78 /* Float+Internal.swift */; };
+		76C9649B1B583A8E001D9E78 /* GLKVector2+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964941B583A8E001D9E78 /* GLKVector2+Internal.swift */; };
+		76C9649C1B583A8E001D9E78 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964951B583A8E001D9E78 /* Utilities.swift */; };
+		76C9649F1B583AB4001D9E78 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 76C9649D1B583AB4001D9E78 /* LICENSE */; };
+		76C964A01B583AB4001D9E78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 76C9649E1B583AB4001D9E78 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,15 @@
 		76C9647D1B583A4B001D9E78 /* SwiftNoiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNoiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C964831B583A4B001D9E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C964841B583A4B001D9E78 /* SwiftNoiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoiseTests.swift; sourceTree = "<group>"; };
+		76C9648E1B583A8E001D9E78 /* Perlin1D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perlin1D.swift; sourceTree = "<group>"; };
+		76C9648F1B583A8E001D9E78 /* Perlin2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perlin2D.swift; sourceTree = "<group>"; };
+		76C964901B583A8E001D9E78 /* Perlin3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perlin3D.swift; sourceTree = "<group>"; };
+		76C964921B583A8E001D9E78 /* CGPoint+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Internal.swift"; sourceTree = "<group>"; };
+		76C964931B583A8E001D9E78 /* Float+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Internal.swift"; sourceTree = "<group>"; };
+		76C964941B583A8E001D9E78 /* GLKVector2+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLKVector2+Internal.swift"; sourceTree = "<group>"; };
+		76C964951B583A8E001D9E78 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		76C9649D1B583AB4001D9E78 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		76C9649E1B583AB4001D9E78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				76C964771B583A4B001D9E78 /* SwiftNoise.h */,
+				76C9648E1B583A8E001D9E78 /* Perlin1D.swift */,
+				76C9648F1B583A8E001D9E78 /* Perlin2D.swift */,
+				76C964901B583A8E001D9E78 /* Perlin3D.swift */,
+				76C964911B583A8E001D9E78 /* Utilities */,
 				76C964751B583A4B001D9E78 /* Supporting Files */,
 			);
 			path = SwiftNoise;
@@ -80,6 +102,8 @@
 		76C964751B583A4B001D9E78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76C9649D1B583AB4001D9E78 /* LICENSE */,
+				76C9649E1B583AB4001D9E78 /* README.md */,
 				76C964761B583A4B001D9E78 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -100,6 +124,17 @@
 				76C964831B583A4B001D9E78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76C964911B583A8E001D9E78 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				76C964921B583A8E001D9E78 /* CGPoint+Internal.swift */,
+				76C964931B583A8E001D9E78 /* Float+Internal.swift */,
+				76C964941B583A8E001D9E78 /* GLKVector2+Internal.swift */,
+				76C964951B583A8E001D9E78 /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C9649F1B583AB4001D9E78 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +245,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C964961B583A8E001D9E78 /* Perlin1D.swift in Sources */,
+				76C9649B1B583A8E001D9E78 /* GLKVector2+Internal.swift in Sources */,
+				76C9649C1B583A8E001D9E78 /* Utilities.swift in Sources */,
+				76C964991B583A8E001D9E78 /* CGPoint+Internal.swift in Sources */,
+				76C964971B583A8E001D9E78 /* Perlin2D.swift in Sources */,
+				76C9649A1B583A8E001D9E78 /* Float+Internal.swift in Sources */,
+				76C964A01B583AB4001D9E78 /* README.md in Sources */,
+				76C964981B583A8E001D9E78 /* Perlin3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +367,7 @@
 		76C964891B583A4B001D9E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +377,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		76C9648A1B583A4B001D9E78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

@@ -193,6 +193,8 @@
 		76C964691B583A4B001D9E78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Fredrik Sjoberg";
 				TargetAttributes = {
@@ -446,6 +448,7 @@
 				76C9648A1B583A4B001D9E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		76C9648B1B583A4B001D9E78 /* Build configuration list for PBXNativeTarget "SwiftNoiseTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +457,7 @@
 				76C9648D1B583A4B001D9E78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -32,7 +32,7 @@ public struct Perlin1D {
             g1[i] = generateRandom
         }
         
-        for i in reverse(0..<B) {
+        for i in (0..<B).reverse() {
             let j = Int(rand()) % B
             swap(&p[i], &p[j])
         }

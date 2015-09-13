@@ -32,7 +32,7 @@ public struct Perlin2D {
             g2[i] = CGPoint(x: generateRandom, y: generateRandom).normalized
         }
         
-        for i in reverse(0..<B) {
+        for i in (0..<B).reverse() {
             let j = Int(rand()) % B
             swap(&p[i], &p[j])
         }

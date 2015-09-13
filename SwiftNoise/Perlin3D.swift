@@ -33,7 +33,7 @@ public struct Perlin3D {
             g3[i] = GLKVector3Normalize(GLKVector3Make(generateRandom, generateRandom, generateRandom))
         }
         
-        for i in reverse(0..<B) {
+        for i in (0..<B).reverse() {
             let j = Int(rand()) % B
             swap(&p[i], &p[j])
         }

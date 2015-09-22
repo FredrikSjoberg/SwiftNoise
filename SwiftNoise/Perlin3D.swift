@@ -50,7 +50,7 @@ public extension Perlin3D {
         var amp = amplitude
         var vec = GLKVector3MultiplyScalar(vector, frequency)
         var result: Float = 0
-        for i in 0..<octaves {
+        for _ in 0..<octaves {
             result += generate3DNoise(vec)*amp
             vec = GLKVector3MultiplyScalar(vec, 2)
             amp *= 0.5

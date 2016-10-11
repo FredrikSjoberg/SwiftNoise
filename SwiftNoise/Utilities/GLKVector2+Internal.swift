@@ -1,6 +1,6 @@
 //
 //  GLKVector2+Internal.swift
-//  SwiftNoise
+//  Descartes
 //
 //  Created by Fredrik Sjöberg on 16/07/15.
 //  Copyright (c) 2015 Fredrik Sjoberg. All rights reserved.

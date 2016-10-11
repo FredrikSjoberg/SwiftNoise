@@ -1,6 +1,6 @@
 //
 //  Float+Internal.swift
-//  SwiftNoise
+//  Descartes
 //
 //  Created by Fredrik Sjöberg on 16/07/15.
 //  Copyright (c) 2015 Fredrik Sjoberg. All rights reserved.
@@ -15,7 +15,7 @@ internal extension Float {
 }
 
 internal extension Float {
-    internal func lerp(a a: Float, b: Float) -> Float {
+    internal func lerp(a: Float, b: Float) -> Float {
         return (a + self*(b - a))
     }
 }

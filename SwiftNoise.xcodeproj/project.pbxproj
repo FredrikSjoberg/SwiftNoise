@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768244151DAD09B6008EC204 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768244141DAD09B6008EC204 /* Table.swift */; };
+		768244171DAD09C7008EC204 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768244161DAD09C7008EC204 /* Matrix.swift */; };
 		76C964781B583A4B001D9E78 /* SwiftNoise.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C964771B583A4B001D9E78 /* SwiftNoise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		76C9647E1B583A4B001D9E78 /* SwiftNoise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C964721B583A4B001D9E78 /* SwiftNoise.framework */; };
 		76C964851B583A4B001D9E78 /* SwiftNoiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C964841B583A4B001D9E78 /* SwiftNoiseTests.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		768244141DAD09B6008EC204 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		768244161DAD09C7008EC204 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		76C964721B583A4B001D9E78 /* SwiftNoise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftNoise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C964761B583A4B001D9E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76C964771B583A4B001D9E78 /* SwiftNoise.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftNoise.h; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 		76C964911B583A8E001D9E78 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				768244161DAD09C7008EC204 /* Matrix.swift */,
+				768244141DAD09B6008EC204 /* Table.swift */,
 				76C964921B583A8E001D9E78 /* CGPoint+Internal.swift */,
 				76C964931B583A8E001D9E78 /* Float+Internal.swift */,
 				76C964941B583A8E001D9E78 /* GLKVector2+Internal.swift */,
@@ -195,14 +201,16 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Fredrik Sjoberg";
 				TargetAttributes = {
 					76C964711B583A4B001D9E78 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 					};
 					76C9647C1B583A4B001D9E78 = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -250,8 +258,10 @@
 				76C964961B583A8E001D9E78 /* Perlin1D.swift in Sources */,
 				76C9649B1B583A8E001D9E78 /* GLKVector2+Internal.swift in Sources */,
 				76C9649C1B583A8E001D9E78 /* Utilities.swift in Sources */,
+				768244151DAD09B6008EC204 /* Table.swift in Sources */,
 				76C964991B583A8E001D9E78 /* CGPoint+Internal.swift in Sources */,
 				76C964971B583A8E001D9E78 /* Perlin2D.swift in Sources */,
+				768244171DAD09C7008EC204 /* Matrix.swift in Sources */,
 				76C9649A1B583A8E001D9E78 /* Float+Internal.swift in Sources */,
 				76C964A01B583AB4001D9E78 /* README.md in Sources */,
 				76C964981B583A8E001D9E78 /* Perlin3D.swift in Sources */,
@@ -290,8 +300,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -339,8 +351,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -360,6 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -371,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -382,6 +398,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -389,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FredrikSjoberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -417,6 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FredrikSjoberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -431,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FredrikSjoberg.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
